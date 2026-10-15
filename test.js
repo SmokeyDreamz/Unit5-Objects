@@ -33,3 +33,21 @@ console.log("Rating:", movie.rating);
 console.log("Runtime:", movie.runtime);
 console.log("Watched:", movie.watched); */
 
+function createStudent(name, grade, gpa, isHonors) {
+  console.log(`Name: ${name}`);
+  console.log(`Grade: ${grade}`);
+  console.log(`Gpa: ${gpa}`);
+  if (gpa >= 3.5){
+    isHonors = true
+    return `Is Honors: ${isHonors}
+    `;
+  }
+  else{
+    isHonors = false
+    return `Is Honors: ${isHonors}
+    `;
+  }
+}
+
+console.log(createStudent("Alex", 11, 3.7));
+console.log(createStudent("Sam", 10, 2.9));
